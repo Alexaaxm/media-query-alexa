@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media query</title>
+    <script
+      src="https://kit.fontawesome.com/f207512997.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("open-menu").addEventListener("click", () => {
+          console.log("open");
+          document.getElementsByClassName("menu")[0].classList.remove("closed");
+        });
+
+        document.getElementById("close-menu").addEventListener("click", () => {
+          console.log("close");
+          document.getElementsByClassName("menu")[0].classList.add("closed");
+        });
+      });
+    </script>
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <aside class="container-menu">
+        <div class="logo">
+          <img src="/assets/img/perro.png" alt="Logo" />
+          <h3>Perrito</h3>
+        </div>
+        <button class="hamburger-icon" id="open-menu">
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+        </button>
+        <ul class="menu closed">
+          <button class="close-icon" id="close-menu">
+            <div class="close-line"></div>
+            <div class="close-line"></div>
+          </button>
+          <li><a class="menu-item" href="#">Inicio</a></li>
+          <li><a class="menu-item" href="#">catalogo</a></li>
+          <li><a class="menu-item" href="#">Ofertas</a></li>
+          <li><a class="menu-item" href="#">Contacto</a></li>
+        </ul>
+      </aside>
+      <nav class="form">
+        <p>Ordenar Por</p>
+        <select name="select">
+          <option value="value1">Value 1</option>
+          <option value="value2" selected>Value 2</option>
+          <option value="value3">Value 3</option>
+        </select>
+      </nav>
+      <main class="main-container">
+        <div class="product-container">
+          <div class="column">
+            <div class="catalog-container">
+              <img
+                src="/assets/img/unnamed.jpg"
+                alt="perrito"
+                class="product-image"
+              />
+              <p>perrito bonito</p>
+              <button type="button">Ver más</button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="catalog-container">
+              <img
+                src="/assets/img/unnamed.jpg"
+                alt="perrito"
+                class="product-image"
+              />
+              <p>perrito bonito</p>
+              <button type="button">Ver más</button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="catalog-container">
+              <img
+                src="/assets/img/unnamed.jpg"
+                alt="perrito"
+                class="product-image"
+              />
+              <p>perrito bonito</p>
+              <button type="button">Ver más</button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="catalog-container">
+              <img
+                src="/assets/img/unnamed.jpg"
+                alt="perrito"
+                class="product-image"
+              />
+              <p>perrito bonito</p>
+              <button type="button">Ver más</button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="catalog-container">
+              <img
+                src="/assets/img/unnamed.jpg"
+                alt="perrito"
+                class="product-image"
+              />
+              <p>perrito bonito</p>
+              <button type="button">Ver más</button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="catalog-container">
+              <img
+                src="/assets/img/unnamed.jpg"
+                alt="perrito"
+                class="product-image"
+              />
+              <p>perrito bonito</p>
+              <button type="button">Ver más</button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="catalog-container">
+              <img
+                src="/assets/img/unnamed.jpg"
+                alt="perrito"
+                class="product-image"
+              />
+              <p>perrito bonito</p>
+              <button type="button">Ver más</button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="catalog-container">
+              <img
+                src="/assets/img/unnamed.jpg"
+                alt="perrito"
+                class="product-image"
+              />
+              <p>perrito bonito</p>
+              <button type="button">Ver más</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="paginator">
+          <ul>
+            <li><a href="#">«</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">»</a></li>
+          </ul>
+        </div>
+      </main>
+      <footer class="footer-dog">
+        <div class="rrss">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+        <p>Todos los derechos reservados</p>
+      </footer>
+    </div>
+  </body>
+</html>
